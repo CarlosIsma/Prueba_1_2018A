@@ -1,0 +1,15 @@
+
+	MUCHACHOS PILAS PARA PONERNOS A HACER 
+	ESE PROYECTO COMO NOS DIVIDIMOS 
+
+	Cada miembro del equipo debe escoger una de las siguientes figuras:
+
+	
+Cubo, pirámide de base triangular, pirámide de base cuadrangular o esfera.
+
+	
+Crear un solo archivo Python, que contenga menú y funciones. 
+
+	Calcular el volumen de las figuras. 
+
+	Crear un archivo readme en el repositorio, con los nombres de los integrantes.
