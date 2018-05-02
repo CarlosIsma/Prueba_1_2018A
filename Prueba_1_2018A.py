@@ -1,3 +1,17 @@
+#libreria para funciones matematicas
+from math import pi
+def cubo():
+    print("****CUBO***")
+    lado = int(input("ingrese un numero por favor"))
+    print("El volumen del cubo es: ", lado * lado * lado)
+
+def esfera():
+    print("****ESFERA***")
+    lado1=float(input("ingrese el radio de la esfera  "))
+
+    lado1=((4/3)*(pi))*(lado1)**3
+    print("el volumen de una esfera es :",lado1)
+
 
 def menu():
 
@@ -7,7 +21,6 @@ def menu():
     print("\t3 - Piramide de base cuadrangular")
     print("\t4 - Esfera")
     print("\t0 - salir")
-
 while True:
 
     menu()
@@ -15,21 +28,20 @@ while True:
     opcionMenu = input("Ingresa una opcion >> ")
 
     if opcionMenu == "1":
-        print("**CUBO**")
-        lado=int (input("Ingresa el lado del cubo"))
-        print("El volumen del cubo es: ", lado*lado*lado)
 
+       cubo()
     elif opcionMenu == "2":
         print ("**PIRAMIDE DE BASE TRIANGULAR**")
+
         input("Has pulsado la opción 2...\npulsa una tecla para continuar")
     elif opcionMenu == "3":
         print ("**PIRAMIDE DE BASE CUADRANGULAR**")
         input("Has pulsado la opción 3...\npulsa una tecla para continuar")
     elif opcionMenu == "4":
-        print("**ESFERA**")
-        input("Has pulsado la opción 3...\npulsa una tecla para continuar")
+        esfera()
     elif opcionMenu == "0":
         break
     else:
         print ("")
         input("Opcion erronea...\npulsa una tecla para continuar")
+
