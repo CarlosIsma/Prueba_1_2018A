@@ -1,14 +1,13 @@
 #libreria para funciones matematicas
 from math import pi
 def cubo():
-    print("****CUBO***")
+
     lado = int(input("Ingrese el lado del cubo por favor"))
     print("El volumen del cubo es: ", lado * lado * lado," unidades cúbicas")
 
 def esfera():
-    print("****ESFERA***")
-    radio=float(input("ingrese el radio de la esfera  "))
 
+    radio=float(input("ingrese el radio de la esfera  "))
     volumen=((4/3)*(pi))*(radio)**3
     print("el volumen de una esfera es :",volumen, " unidades cúbicas")
 
@@ -28,7 +27,6 @@ def VolPiramideCuadran():
 
 
 
-
 def menu():
 
     print("Selecciona la figura a calcular el volumen")
@@ -44,7 +42,7 @@ while True:
     opcionMenu = input("Ingresa una opcion >> ")
 
     if opcionMenu == "1":
-
+       print ("**CUBO**")
        cubo()
        print("")
        input("Pulsa una tecla para continuar")
@@ -55,17 +53,16 @@ while True:
         print("")
         input("Pulsa una tecla para continuar")
 
-
     elif opcionMenu == "3":
         print ("**PIRAMIDE DE BASE CUADRANGULAR**")
         VolPiramideCuadran()
-
         print("")
         input("Pulsa una tecla para continuar")
 
-
     elif opcionMenu == "4":
+        print("**ESFERA**")
         esfera()
+        print("")
         input("Pulsa una tecla para continuar")
 
     elif opcionMenu == "0":
